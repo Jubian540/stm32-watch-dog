@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"rk3399_f0_v1\startup_stm32f070x6.o"
+"rk3399_f0_v1\main.o"
+"rk3399_f0_v1\gpio.o"
+"rk3399_f0_v1\tim.o"
+"rk3399_f0_v1\stm32f0xx_it.o"
+"rk3399_f0_v1\stm32f0xx_hal_msp.o"
+"rk3399_f0_v1\stm32f0xx_hal_tim.o"
+"rk3399_f0_v1\stm32f0xx_hal_tim_ex.o"
+"rk3399_f0_v1\stm32f0xx_hal_rcc.o"
+"rk3399_f0_v1\stm32f0xx_hal_rcc_ex.o"
+"rk3399_f0_v1\stm32f0xx_hal.o"
+"rk3399_f0_v1\stm32f0xx_hal_i2c.o"
+"rk3399_f0_v1\stm32f0xx_hal_i2c_ex.o"
+"rk3399_f0_v1\stm32f0xx_hal_gpio.o"
+"rk3399_f0_v1\stm32f0xx_hal_dma.o"
+"rk3399_f0_v1\stm32f0xx_hal_cortex.o"
+"rk3399_f0_v1\stm32f0xx_hal_pwr.o"
+"rk3399_f0_v1\stm32f0xx_hal_pwr_ex.o"
+"rk3399_f0_v1\stm32f0xx_hal_flash.o"
+"rk3399_f0_v1\stm32f0xx_hal_flash_ex.o"
+"rk3399_f0_v1\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "RK3399_F0_v1\RK3399_F0_v1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RK3399_F0_v1.map" -o RK3399_F0_v1\RK3399_F0_v1.axf
